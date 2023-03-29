@@ -1,8 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/terminal');
-
-.intex_text {
-    display: none;
-}
+
 
 body {
     background-color: black;
@@ -87,7 +84,7 @@ a {
     }
 
     .about_text {
-        padding-right: auto;
+        padding-right: 50%;
     }
 
     .grid_class {
@@ -100,7 +97,7 @@ a {
     }
 
     .goalText {
-        padding-right: auto;
+        padding-right: 50%;
     }
 }
 
