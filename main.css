@@ -1,0 +1,151 @@
+@import url('https://fonts.cdnfonts.com/css/terminal');
+
+.intex_text {
+    display: none;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: courier, monospace;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+div {
+    display: block;
+}
+
+.control {
+    width: 750px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    color: aliceblue;
+}
+
+.a {
+    color: #0F0;
+}
+
+.aa {
+    color: aliceblue;
+
+}
+
+.b {
+    color: #ff0096;
+}
+
+.c {
+    color: #0bc;
+}
+
+
+.selected {
+    background-color: #ff0096;
+}
+
+.grid_class {
+    padding: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10% 1fr 60%;
+}
+
+/* add a media query for screens with a maximum width of 420px */
+@media (max-width: 420px) {
+    * {
+        overflow: hidden;
+    }
+
+    body {
+        background-color: black;
+        color: aliceblue;
+        font-family: courier, monospace;
+        font-size: 15px;
+        font-weight: 900;
+
+
+    }
+
+    .control {
+        height: 100%;
+    }
+
+    .selected {
+        background-color: #ff009500;
+    }
+
+    .use_arror_text {
+        display: none;
+    }
+
+    .about_text {
+        padding-right: auto;
+    }
+
+    .grid_class {
+        padding: 2px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 10% 2fr 70%;
+    }
+
+    .goalText {
+        padding-right: auto;
+    }
+}
+
+/* add a media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    * {
+        overflow: hidden;
+    }
+
+    body {
+        background-color: black;
+        color: aliceblue;
+        font-family: courier, monospace;
+        font-size: 15px;
+        font-weight: 900;
+
+
+    }
+
+    .control {
+        height: 100%;
+    }
+
+    .selected {
+        background-color: #ff009500;
+    }
+
+    .use_arror_text {
+        display: none;
+    }
+
+    .about_text {
+        padding-right: auto;
+    }
+
+    .grid_class {
+        padding: 2px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 10% 2fr 70%;
+    }
+
+    .goalText {
+        padding-right: auto;
+    }
+}
