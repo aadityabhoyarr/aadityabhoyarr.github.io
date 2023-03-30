@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/terminal');
-
+
+
 
 body {
     background-color: black;
@@ -54,6 +55,28 @@ a {
     display: grid;
     grid-template-columns: 10% 1fr 60%;
 }
+
+.curse {
+    border-left: 10px solid rgb(255, 255, 255);
+    height: 20px;
+    animation: jump .8s infinite;
+    display: inline-block;
+}
+
+@keyframes jump {
+    0% {
+        border-color: black;
+    }
+
+    50% {
+        border-color: white;
+    }
+
+    100% {
+        border-color: black;
+    }
+}
+
 
 /* add a media query for screens with a maximum width of 420px */
 @media (max-width: 420px) {
