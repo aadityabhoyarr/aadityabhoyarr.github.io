@@ -1,28 +1,24 @@
-@import url('https://fonts.cdnfonts.com/css/terminal');
-
-
-
 body {
     background-color: black;
     color: aliceblue;
     font-family: courier, monospace;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
 }
 
-div {
-    display: block;
-}
+
 
 .control {
-    width: 750px;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 30% 0 30%;
 }
 
 a {
     color: aliceblue;
+    text-decoration: none;
 }
 
 .a {
@@ -42,47 +38,81 @@ a {
     color: #0bc;
 }
 
-
-.selected {
-    background-color: #ff0096;
+img {
+    border-radius: 10%;
 }
 
-.grid_class {
-    padding: 5px;
-}
-
-.grid {
+.pro {
     display: grid;
-    grid-template-columns: 10% 1fr 60%;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.curse {
-    border-left: 10px solid rgb(255, 255, 255);
+.pro_grid {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 80px;
+}
+
+.soc {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.soc_grid {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    gap: 100px;
+}
+
+.text1 {
+    font-weight: bold;
+}
+
+.text2_mini {
+    color: #727272;
+    font-size: 15px;
+
+}
+
+.soc_text {
+    color: #727272;
+}
+
+.arrow {
+    width: 20px;
     height: 20px;
-    animation: jump .8s infinite;
-    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    transform: rotate(45deg);
 }
 
-@keyframes jump {
-    0% {
-        border-color: black;
-    }
+.arrow span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 
-    50% {
-        border-color: white;
-    }
-
-    100% {
-        border-color: black;
-    }
+    transform: rotate(-15deg);
 }
+
+.link-underline {
+    text-decoration: none;
+}
+
+.link-underline:hover {
+    text-decoration: underline;
+}
+
+
 
 
 /* add a media query for screens with a maximum width of 420px */
 @media (max-width: 420px) {
-    * {
-        overflow: hidden;
-    }
 
     body {
         background-color: black;
@@ -95,40 +125,42 @@ a {
     }
 
     .control {
-        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10% 0 10%;
     }
 
-    .selected {
-        background-color: #ff009500;
+    .pro {
+        display: block;
+        grid-template-columns: repeat(1, 2fr);
     }
 
-    .use_arror_text {
-        display: none;
+    .pro_grid {
+        display: block;
+        grid-template-columns: max-content auto;
+        gap: 80px;
     }
 
-    .about_text {
-        padding-right: 50%;
+    .soc {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .grid_class {
-        padding: 2px;
+    .soc_grid {
+        display: block;
+        grid-template-columns: max-content auto;
+        align-items: center;
+        gap: 100px;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 10% 2fr 70%;
-    }
 
-    .goalText {
-        padding-right: 50%;
-    }
 }
 
-/* add a media query for screens with a maximum width of 900px */
-@media (max-width: 900px) {
-    * {
-        overflow: hidden;
-    }
+
+/* add a media query for screens with a maximum width of 920px */
+@media (max-width: 920px) {
 
     body {
         background-color: black;
@@ -141,31 +173,35 @@ a {
     }
 
     .control {
-        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10% 0 10%;
     }
 
-    .selected {
-        background-color: #ff009500;
+    .pro {
+        display: block;
+        grid-template-columns: repeat(1, 2fr);
     }
 
-    .use_arror_text {
-        display: none;
+    .pro_grid {
+        display: block;
+        grid-template-columns: max-content auto;
+        gap: 80px;
     }
 
-    .about_text {
-        padding-right: auto;
+    .soc {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .grid_class {
-        padding: 2px;
+    .soc_grid {
+        display: block;
+        grid-template-columns: max-content auto;
+        align-items: center;
+        gap: 100px;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 10% 2fr 70%;
-    }
 
-    .goalText {
-        padding-right: auto;
-    }
 }
