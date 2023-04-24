@@ -108,6 +108,19 @@ img {
     text-decoration: underline;
 }
 
+.message-bubble {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.836);
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10%;
+}
 
 
 
