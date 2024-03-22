@@ -1,91 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
+    <meta charset="UTF-8" />
+<!--     <link rel="icon" type="image/x-png" href="/assets/logo.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
     <title>Aditya Bhoyar</title>
+    <script type="module" crossorigin src="/assets/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index.css">
 </head>
 
 <body>
-    <div class="control">
-
-         <br>
-        Hello, World!
-        <br><br>
-        <div class="about_text">I'm Aditya Bhoyar, a 20-year-old programmer from India. Currently, I'm working on
-            creating my own
-            creations.</div>
-        <br><br>
-        <div class="archive">
-            <div class="b">Aricive : </div><br>
-            <div class="pro">
-                <div class="pro_grid">
-                    <p class="text1">Jan 2023</p>
-                    <div class="text2">
-                        <a class="link-underline"
-                            href="https://play.google.com/store/apps/details?id=com.adityabhoyar.neosadventure">
-                            Neo's Adventure: Puzzle Game
-                            <span class="arrow">
-                                <span></span>
-                            </span>
-                        </a>
-                        <p class="text2_mini">Game made by Unity game engine</p>
-                    </div>
-                </div>
-
+    <main id="main">
+        <div id="terminal">
+            <div>
+                <span id="prompt"><span id="pre-user"></span>@<span id="pre-host"></span>:$ ~ </span>
+            </div>
+            <!-- command output will be inserted before #write-lines-->
+            <a id="write-lines"></a>
+        </div>
+        <div id="input-line">
+            <div>
+                <p id="input-hidden">
+                    <span id="prompt"><span id="user"></span>@<span id="host"></span>:$ ~
+                    </span>
+                    <input id="user-input" type="text" enterkeyhint="Enter" spellcheck="false" autocapitalize="none"
+                        autocomplete="off" />
+                </p>
             </div>
             <br>
-            <div class="b">Social : </div><br>
-
-            <div class="soc">
-                <div class="soc_grid">
-                    <p class="soc_text">Github</p>
-                    <a class="link-underline" href="https://github.com/aadityabhoyar">
-                        @aadityabhoyar
-                        <span class="arrow">
-                            <span></span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="soc">
-                <div class="soc_grid">
-                    <p class="soc_text">Twitter</p>
-                    <a class="link-underline" href="https://twitter.com/aadityabhoyarr">
-                        @aadityabhoyarr
-                        <span class="arrow">
-                            <span></span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="soc">
-                <div class="soc_grid">
-                    <p class="soc_text">LinkedIn</p>
-                    <a class="link-underline" href="https://www.linkedin.com/in/aditya-bhoyar-64a052238/">
-                        Aditya Bhoyar
-                        <span class="arrow">
-                            <span></span>
-                        </span>
-                    </a>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <script>
-        document.querySelector('a').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('.message-bubble').style.display = 'block';
-            setTimeout(function () {
-                document.querySelector('.message-bubble').style.display = 'none';
-
-            }, 2000); // Change the duration (in milliseconds) for how long the message bubble should be displayed
-        });
-    </script>
+    </main>
 </body>
+
 
 </html>
