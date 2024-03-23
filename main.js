@@ -64,7 +64,7 @@ const z = ["⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀�
         linkedin: "aditya-bhoyar"
     }
     , ee = "Thats's my social"
-    , te = [["Neo's Adventure", "Puzzle Game (Unity.C#)", "https://play.google.com/store/apps/details?id=com.adityabhoyar.neosadventure"]]
+    , te = [["Neo's Adventure", "Puzzle Game (Unity.C#)", "https://play.google.com/store/apps/details?id=com.adityabhoyar.neosadventure"], ["Repositories", "Some fo my random projects (Python.Unity.C#)", "https://github.com/aadityabhoyar"]]
     , re = {
         background: "#000000",
         foreground: "#F8DDE5",
